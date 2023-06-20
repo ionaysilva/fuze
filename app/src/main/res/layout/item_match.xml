@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="24dp"
+        android:layout_marginEnd="24dp"
+        android:minHeight="200dp"
+        app:cardBackgroundColor="#272639"
+        app:cardCornerRadius="16dp">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <View
+                android:id="@+id/divisor"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginTop="20dp"
+                android:background="#FFFFFF"
+                app:layout_constraintTop_toBottomOf="@id/first_title" />
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:id="@+id/second_image"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="44dp"
+                android:src="@drawable/league_logo"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@id/text"
+                app:layout_constraintTop_toTopOf="parent" />
+
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:id="@+id/first_image"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:layout_marginStart="73dp"
+                android:layout_marginTop="45dp"
+                android:src="@drawable/league_logo"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:id="@+id/league_logo"
+                android:layout_width="16dp"
+                android:layout_height="16dp"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginBottom="8dp"
+                android:src="@drawable/league_logo"
+                android:text="@string/name_not_found"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/divisor" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/second_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="@string/name_not_found"
+                android:textColor="@color/white"
+                app:layout_constraintEnd_toEndOf="@id/second_image"
+                app:layout_constraintStart_toStartOf="@id/second_image"
+                app:layout_constraintTop_toBottomOf="@id/second_image" />
+
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="77dp"
+                android:text="@string/vs"
+                android:textColor="@color/white"
+                app:layout_constraintEnd_toStartOf="@id/second_image"
+                app:layout_constraintStart_toEndOf="@id/first_image"
+                app:layout_constraintTop_toTopOf="parent" />
+
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/first_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:text="@string/name_not_found"
+                android:textColor="@color/white"
+                app:layout_constraintEnd_toEndOf="@id/first_image"
+
+                app:layout_constraintStart_toStartOf="@id/first_image"
+                app:layout_constraintTop_toBottomOf="@id/first_image" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/league_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:textColor="@color/white"
+                app:layout_constraintStart_toEndOf="@id/league_logo"
+                app:layout_constraintTop_toTopOf="@id/league_logo"
+                tools:text="League + serie" />
+
+            <include
+                android:id="@+id/game_running"
+                layout="@layout/item_top_now"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+    </androidx.cardview.widget.CardView>
+
+
+</layout>

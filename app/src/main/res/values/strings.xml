@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">PandaApplication</string>
+    <string name="now">AGORA</string>
+    <string name="vs">VS</string>
+    <string name="match">Partidas</string>
+    <string name="name_not_found">Nome não encontrado</string>
+    <string name="player_name">Nome Jogador</string>
+    <string name="player_name_format">%1$s  %1$s</string>
+    <string name="title_format">%1$s + %1$s</string>
+
+</resources>

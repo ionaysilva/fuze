@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#252525">
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:id="@+id/second_image"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="24dp"
+                android:src="@drawable/league_logo"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@id/text"
+                app:layout_constraintTop_toTopOf="parent" />
+
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:id="@+id/first_image"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:layout_marginStart="73dp"
+                android:layout_marginTop="24dp"
+                android:src="@drawable/league_logo"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/second_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="@string/name_not_found"
+                android:textColor="@color/white"
+                app:layout_constraintEnd_toEndOf="@id/second_image"
+                app:layout_constraintStart_toStartOf="@id/second_image"
+                app:layout_constraintTop_toBottomOf="@id/second_image" />
+
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="77dp"
+                android:text="@string/vs"
+                android:textColor="@color/white"
+                app:layout_constraintEnd_toStartOf="@id/second_image"
+                app:layout_constraintStart_toEndOf="@id/first_image"
+                app:layout_constraintTop_toTopOf="parent" />
+
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/first_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:text="@string/name_not_found"
+                android:textColor="@color/white"
+                app:layout_constraintEnd_toEndOf="@id/first_image"
+                app:layout_constraintStart_toStartOf="@id/first_image"
+                app:layout_constraintTop_toBottomOf="@id/first_image" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/time"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                tools:text="Hoje, 21:00"
+                android:textColor="@color/white"
+                app:layout_constraintTop_toBottomOf="@id/first_title"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent" />
+
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+</layout>
